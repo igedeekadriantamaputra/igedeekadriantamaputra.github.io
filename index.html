@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JQuery Link -->
+<script type="text/javascript" src="asset/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="asset/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="asset/jquery-ui.css">
+<!-- LInk CSS -->
+<title>UAS Desain Web</title>
+<link rel="icon" href="images/Logo.png">
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+
+    $( "#sortable" ).sortable();
+  
+  } );
+  </script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background: linear-gradient(90deg, rgba(41,134,47,1) 0%, rgba(110,203,99,1) 46%, rgba(110,203,99,1) 100%);" >
+<div class="container py-2">
+<a class="navbar-brand" href="#">
+<img src="images/Logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+Jatilwuih <strong>Bali</strong>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto ">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="sarana.html">Sarana Akomodasi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="wawasan.html">Wawasan</a>
+</li>
+<form class="d-flex">
+<input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Cari
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selamat Datang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Selamat Datang di Website Jatiluwih
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="images/1.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2 class="disply-2">Objek Wisata <span>Jatiluwih</span> , dengan Panorama <span>Terasering</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/2.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2>Objek Wisata <span>jatiluwih</span> , dengan Panorama <span>Terasering</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/jatiluwih.jpg" class="d-block w-100 img-thumbnail " alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2>Objek Wisata <span>Jatiluwih</span> , dengan Panorama <span>Terasering</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<div id="dialog" title="Video Jatiluwih">
+<h3>Video Jatiluwih</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N_YQ4KK7WyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+<!-- Biaya Masuk -->
+<div class="accordion" id="accordionExample" style="background-color:#f3f4f5">
+	<p id="biayamasuk" class="display-4" style="text-align:center;">Biaya Masuk</p>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color:#f3f4f5" >
+        <img src="images/mobil.svg" width="20px" height="20px"> Mobil
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="background-color:#f3f4f5">
+      <div class="accordion-body">
+        Wisatawan yang liburan bersama keluarga dan anak-anak, akan memilih menggunakan mobil untuk transportasi jalan-jalan di Bali. Ada dua jenis penyewaan mobil di Bali, yaitu sewa mobil Bali tanpa supir dan rental mobil Bali dengan driver. Karena lokasi dari desa Jatiluwih Penebel Tabanan lumayan jauh dari Bali selatan. Maka sebagian besar wisatawan memilih untuk menggunakan jasa sewa mobil plus driver di Bali.
+        <p>Rp. 30.000</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+  	
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color:#f3f4f5">
+        <img src="images/motor.svg" width="20px" height="20px"> Motor
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style="background-color:#f3f4f5">
+        Menggunakan sepeda motor untuk transportasi jalan-jalan di pulau Bali biasanya disukai oleh wisatawan yang liburan bersama teman atau liburan sendirian. Mencari jasa rental motor di Bali sangalah mudah, jika anda menginap di kawasan tempat wisata bagian selatan pulau Bali. Seperti Kuta, Legian, Seminyak, Canggu, Ungasan, Uluwatu, Sanur dan Tanjung Benoa.
+        <p>Rp. 15.000</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color:#f3f4f5">
+       <img src="images/bus.svg" width="20px" height="20px"> Bus
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style="background-color:#f3f4f5">
+        Menggunakan BUS untuk transportasi jalan-jalan di pulau Bali biasanya disukai oleh wisatawan yang liburan bersama teman atau liburan sendirian. Mencari jasa rental motor di Bali sangalah mudah, jika anda menginap di kawasan tempat wisata bagian selatan pulau Bali. Seperti Kuta, Legian, Seminyak, Canggu, Ungasan, Uluwatu, Sanur dan Tanjung Benoa.
+        <p>Rp. 80.000</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tutup biaya masuk -->
+<br>
+<!-- Objek Wisata -->
+<div class="container-fluid" style="background-color:#f3f4f5">
+<p id="jaraktempuh" class="display-4" style="text-align:center;">Jarak Tempuh</p>
+<div class="row">
+<div class="col-md-6">
+<h4>Dari Denpasar</h4>
+<p class="lead">Objek wisata ini sendiri terletak di atas ketinggian 700 mdpl. Letaknya, tidak jauh dari Gunung Batu Karu yang memang dikenal dengan pemandangan alamnya berupa sawah terasiring yang elok nan menggoda. Maka dari itu menempuh waktu kurang lebih 2 jam dari denpasar menuju ke Jatiluwih</p>
+<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+<h4>Hubungi Kami di Sosial Media</h4>
+<a href="#" class="btn btn-primary" >Facebook</a>
+<a href="#" class="btn btn-success">Twitter</a>
+<a href="#" class="btn btn-warning">Youtube</a>
+</div>
+<div class="col-md-6">
+<figure class="figure">
+<img src="images/jaraktempuh.png" class="img-thumbnail" width="100%" alt="gambar danau beratan">
+<figcaption style="text-align:center;">Gambar Dari Denpasar</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<figure class="figure">
+<img src="images/jaraktempuh2.png" class="img-thumbnail" width="100%" alt="gambar Kebun Raya">
+<figcaption style="text-align:center;">Gambar Dari Tabanan Kota</figcaption>
+</figure>
+</div>
+<div class="col-md-6">
+<h4 >Dari Tabanan Kota</h4>
+<p class="lead">Objek wisata ini sendiri terletak di atas ketinggian 700 mdpl. Letaknya, tidak jauh dari Gunung Batu Karu yang memang dikenal dengan pemandangan alamnya berupa sawah terasiring yang elok nan menggoda. Maka dari itu menempuh waktu kurang lebih 45 menit dari Tabanan kota menuju ke Jatiluwih</p>
+<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+<h4>Hubungi Kami di Sosial Media</h4>
+<a href="#" class="btn btn-primary">Facebook</a>
+<a href="#" class="btn btn-success">Twitter</a>
+<a href="#" class="btn btn-warning">Youtube</a>
+</div>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link">Previous</a>
+</li>
+<li class="page-item"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#">Next</a>
+</li>
+</ul>
+</nav>
+</div>
+<!-- Card -->
+<div class="container-fluid" style="background-color:#f3f4f5">
+<p id="sarana" class="display-4" style="text-align:center;">Sarana Akomodasi</p>
+<div class="row">
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+<img src="images/1.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+<div class="card-body">
+<h5 class="card-title"> Terrasering</h5>
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-half.svg" width="30px" height="30px">
+<br>
+<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+<p class="card-text">Desa Jatiluwih – Salah satu alasan banyak wisatawan berkunjung ke Bali adalah melihat perpaduan alam dan juga budaya yang menjadi energi terbesar wilayah ini. Semua tempat, semua waktu seakan mampu dipadukan sehingga, menjadi daya tarik luar biasa. Apalagi, bagi wisatawan mancanegara yang sudah mengenal Bali sejak lama.</p>
+<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+<img src="images/2.jpg" class="card-img-top img-thumbnail" alt="kebun raya" width="100%" >
+<div class="card-body">
+<h5 class="card-title"> Air Terjun Yeh Hoo</h5>
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-half.svg" width="30px" height="30px">
+<img src="images/star.svg" width="30px" height="30px">
+<br>
+<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+<p class="card-text">Air Terjun Yeh Hoo Salah satu yang mungkin masih mereka ingat adalah esoktisnya pemandangan di Desa Jatiluwih. Dimana, kita akan disuguhkan dengan ketenangan, kedamaian, dan semua unsur yang membuat kita melupakan segala beban dan penat pekerjaan maupun kehidupan selama ini.</p>
+<a href="https://wa.wizard.id/54dae2" class="btn btn-primary">Booking Now !!!</a>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="width: 23rem;">
+<img src="images/jatiluwih.jpg" class="card-img-top img-thumbnail" alt="skuter" width="100%" >
+<div class="card-body">
+<h5 class="card-title"> Pagi Hari di Jatiluwih</h5>
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-fill.svg" width="30px" height="30px">
+<img src="images/star-half.svg" width="30px" height="30px">
+<img src="images/star.svg" width="30px" height="30px">
+<br>
+<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+<p class="card-text">Jatiluwih di pagi hari sangat indah karena bentuknya yang miring dan berundak membuat panoramanya menjadi sesuatu yang berbeda. Selain itu, luas kawasan ini sendiri mencapai 53 ribu hektar dan ditetapkan oleh UNESCO sebagai situs warisan budaya dunia. Sehingga, menjadi sawah terasiring terluas di Pulau Bali.</p>
+<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<!-- End Card -->
+<!-- Progresbar -->
+<div class="container" style="background-color:#f3f4f5">
+<p id="wawasan" class="display-4" style="text-align:center;">Kunjungan Wisatawan</p>
+<div class="progress">
+<label class="h6">Amerika :</label>
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">Australia :</label>
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">China :</label>
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+</div>
+<br>
+<div class="progress">
+<label class="h6">Eropa :</label>
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+</div>
+<br>
+</div>
+<br>
+<hr>
+<!-- EndProgressbar -->
+<!-- Galery -->
+<div class="container" style="background-color:#f3f4f5">
+	<p id="galery" class="display-4" style="text-align:center;">Galery Photo</p>
+	<div class="row" id="sortable">
+		<div class="col-md-3">
+			<figure>
+				<img src="images/1.jpg" class="img-thumbnail">
+				<figcaption>Gambar Terrasering Jatiluwih</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-3">
+			<figure>
+				<img src="images/2.jpg" class="img-thumbnail">
+				<figcaption>Gambar Air Terjun Yeh Hoo</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-3">
+			<figure>
+				<img src="images/4.jpg" class="img-thumbnail">
+				<figcaption>Gambar Memanen Padi</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-3">
+			<figure>
+				<img src="images/5.jpg" class="img-thumbnail">
+				<figcaption>Gambar Restaurant Gong Jatiluwih</figcaption>
+			</figure>
+		</div>
+
+		
+	</div>
+	
+</div>
+<!-- End Galery -->
+<!-- Contact -->
+<div class="container-fluid" style="background-color:#f3f4f5">
+<p class="display-4" style="text-align:center;">Hubungi Kami</p>
+<div class="row">
+<div class="col-md-6">
+<p class="lead"><strong>Google Map Location</strong></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63159.33419833612!2d115.08378014091404!3d-8.356486089550488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd227bedf45cc29%3A0x5030bfbca831a80!2sJatiluwih%2C%20Penebel%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1642731736998!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="col-md-6">
+<form class="row g-3" style="background-color:#a2d9ff">
+<div class="col-md-6">
+<label for="namadepan" class="form-label">Nama Depan</label>
+<input type="text" class="form-control" id="namadepan">
+</div>
+<div class="col-md-6">
+<label for="namabelakang" class="form-label">Nama Belakang</label>
+<input type="text" class="form-control" id="namabelakang">
+</div>
+<div class="col-md-6">
+<label for="inputEmail4" class="form-label">Email</label>
+<input type="email" class="form-control" id="inputEmail4">
+</div>
+<div class="col-md-6">
+<label for="inputPassword4" class="form-label">Password</label>
+<input type="password" class="form-control" id="inputPassword4">
+</div>
+<div class="col-12">
+<label for="telp" class="form-label">No Telp</label>
+<input type="text" class="form-control" id="notelp" >
+</div>
+<div class="col-12">
+<label for="inputAddress2" class="form-label">ALamat</label>
+<input type="text" class="form-control" id="inputAddress2" >
+</div>
+<div class="col-md-6">
+<label for="inputCity" class="form-label">Kabupaten/Kota</label>
+<input type="text" class="form-control" id="inputCity">
+</div>
+<div class="col-md-4">
+<label for="inputState" class="form-label">Desa</label>
+<select id="inputState" class="form-select">
+<option selected>Choose...</option>
+<option>...</option>
+</select>
+</div>
+<div class="col-md-2">
+<label for="inputZip" class="form-label">Zip</label>
+<input type="text" class="form-control" id="inputZip">
+</div>
+<div class="col-12">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="gridCheck">
+<label class="form-check-label" for="gridCheck">
+Check me out
+</label>
+</div>
+</div>
+<div class="col-12">
+<button type="submit" class="btn btn-success btn-lg">Kirim</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- End Contact -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#198754" fill-opacity="1" d="M0,224L15,218.7C30,213,60,203,90,186.7C120,171,150,149,180,133.3C210,117,240,107,270,133.3C300,160,330,224,360,250.7C390,277,420,267,450,240C480,213,510,171,540,176C570,181,600,235,630,261.3C660,288,690,288,720,288C750,288,780,288,810,277.3C840,267,870,245,900,245.3C930,245,960,267,990,277.3C1020,288,1050,288,1080,256C1110,224,1140,160,1170,160C1200,160,1230,224,1260,240C1290,256,1320,224,1350,218.7C1380,213,1410,235,1425,245.3L1440,256L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
+<footer class="text-white text-center" style="background-color:#198754;">
+<div class="container-fluid" style="background-color:#198754">
+<div class="row">
+<div class="col-md-4">
+@2021 Created By Web Design
+</div>
+<div class="col-md-4">
+<ul style="text-align:left;" class="list-unstyled">
+<li ><a href="#"></a> Home</li>
+<li ><a href="#objekwisata"></a> Objek Wisata</li>
+<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+<li ><a href="#wawasan"></a> Wawasan</li>
+</ul>
+</div>
+<div class="col-md-4">
+<p class="display-6">PT Desain Website</p>
+<p >Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Culpa dolores quo deleniti architecto ex, cumque.</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

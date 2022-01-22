@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JQuery Link -->
+<script type="text/javascript" src="asset/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="asset/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="asset/jquery-ui.css">
+<title>UAS Desain Web</title>
+<link rel="icon" href="images/Logo.png">
+<script>
+  $( function() {
+    $( "#dialog" ).dialog();
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background: linear-gradient(90deg, rgba(41,134,47,1) 0%, rgba(110,203,99,1) 46%, rgba(110,203,99,1) 100%);" >
+<div class="container py-2">
+<a class="navbar-brand" href="#">
+<img src="images/Logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+Jatiluwih <strong>Bali</strong>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto ">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="sarana.html">Sarana Akomodasi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="wawasan.html">Wawasan</a>
+</li>
+<form class="d-flex">
+<input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Cari
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selamat Datang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Selamat Datang di Website Jatiluwih
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="images/1.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2 class="disply-2">Objek Wisata <span>Jatiluwih</span> , dengan Panorama <span>Terrace</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/2.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2>Objek Wisata <span>Jatiluwih</span> , dengan Panorama <span>Air Terjun Yeh Hoo</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/jatiluwih.jpg" class="d-block w-100 img-thumbnail " alt="..." width="100%" height="500px">
+<div class="carousel-caption d-none d-md-block" >
+<h2>Objek Wisata <span>Jatiluwih</span> , dengan Panorama <span>Terrace</span> dengan Keindahan Alam </h2>
+<p class="lead">Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+<button type="button" class="btn btn-success btn-lg" id="dibuka">
+Jelajahi
+</button>
+<button type="button" class="btn btn-warning btn-lg">
+Video
+</button>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<div id="dialog" title="Video Jatiluwih">
+<h3>Video Jatiluwih</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N_YQ4KK7WyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- Card -->
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Hotel</a></li>
+    <li><a href="#tabs-2">Transport</a></li>
+    <li><a href="#tabs-3">Restaurant</a></li>
+  </ul>
+    <div id="tabs-1">
+    <div class="container-fluid" style="background-color:#f3f4f5">
+	<p id="sarana" class="display-4" style="text-align:center;">Hotel</p>
+	<div class="row">
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/hotel1.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title">Hotel Rice Terrace</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+		<p class="card-text">Berada di lereng Gunung Batukaru, Warung Jatiluwih 259 menjadi tempat menginap yang nyaman dan tenang dengan view area persawahan. Warung Jatiluwih hanya memiliki 6 kamar dengan luar areal 35 hektar, serta memiliki area parkir yang luas. Warung Jatiluwih 259 juga menyediakan restoran dengan menu lokal dan internasional. </p>
+		<p>Rp. 200k/Malam</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/hotel2.jpg" class="card-img-top img-thumbnail" alt="kebun raya" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title"> Hotel Bhuana Agung</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-9.27062420959735, 115.1738827865749
+		<p class="card-text">Resort ini terletak di jalur tujuan utama, Kabupaten Tabanan. Di sekitar Umadhatu Villa Anda akan disuguhkan dengan pemandangan yang menawan, persawahan, gunung, dan Anda pun bisa menangkap keindahan sunrise. 23 unit siap disewakan dan fasilitas restoran serta wifi gratis siap Anda nikmati.</p>
+		<p>Rp. 300k/Malam</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-primary">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/hotel3.jpg" class="card-img-top img-thumbnail" alt="skuter" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title"> Hotel Lumbung Jatiluwih</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-10.27062420959735, 115.1738827865749
+		<p class="card-text">Suasana lingkungan yang asri dan tentunya nyaman bisa Anda temui di sini.  jika ingin menginap di sini. Untuk menyaksikan pemandangan terasering sawah Desa Jatiluwih Anda hanya butuh 11 menit saja dnegan berkendara.</p>
+		<p>Rp. 150k/Malam</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+		</div>
+	</div>
+  </div>
+ </div>
+  <div id="tabs-2">
+      <div class="container-fluid" style="background-color:#f3f4f5">
+	<p id="sarana" class="display-4" style="text-align:center;">Transport</p>
+	<div class="row">
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/transport1.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title">Sepeda</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+		<p class="card-text">Naik sepeda Anda di pemandangan paling indah dari teras padi Jatiluwih. Situs Warisan Dunia ini memiliki pemandangan sawah sebagai museum hidup yang menampilkan pertanian menggunakan sistem irigasi air tradisional yang disebut Subak. Jalur wisata bersepeda di sepanjang jalur kecil teras beras dalam waktu 2 jam dan tur berakhir dengan makan siang mewah yang menghadirkan nasi organik dan sayuran segar. </p>
+		<p>Rp. 100k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/tracking2.jpg" class="card-img-top img-thumbnail" alt="kebun raya" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title">Tracking</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-9.27062420959735, 115.1738827865749
+		<p class="card-text">wisata tracking di Desa Wisata Jatiluwih sudah pernah dicoba saat kunjungan mantan Presiden Amerika Serikat, Barack Obama, bersama keluarga pada akhir tahun lalu. Saat itu, Obama mencoba wahana tracking jalur panjang melalui empat rute jalan yang meliputi jalur merah yang ditempuh dengan berjalan kaki selama satu jam, lalu jalur ungu selama 1,2 jam, jalur biru selama 1,5-2 jam dan jalur hijau selama 2-3 jam.</p>
+		<p>Rp. 15k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-primary">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/4.jpg" class="card-img-top img-thumbnail" alt="skuter" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title"> Tracking Memanen Padi</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-10.27062420959735, 115.1738827865749
+		<p class="card-text">Tradisi panen raya padi merah yang digelar setiap bulan Juni itu merupakan upaya mempromosikan kembali kawasan objek wisata yang telah ditetapkan UNESCO sebagai warisan budaya dunia tersebut</p>
+		<p>Rp. 30k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+		</div>
+	</div>
+  </div>
+  </div>
+  <div id="tabs-3">
+      <div class="container-fluid" style="background-color:#f3f4f5">
+	<p id="sarana" class="display-4" style="text-align:center;">Restaurant</p>
+	<div class="row">
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/5.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title">Gong Jatiluwih</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-8.27062420959735, 115.1738827865749
+		<p class="card-text">Gong Jatiluwih tak hanya menghadirkan panorama yang indah, tetapi juga makanan yang lezat. Anda perlu mencicipi kudapan khas Bali, seperti ayam betutu dan teh beras merah. Namun, mereka juga menyajikan kudapan western yang tentunya mampu menggoyang lidah Anda.</p>
+		<p>Rp. 80k - 180k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/restaurant2.jpg" class="card-img-top img-thumbnail" alt="kebun raya" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title">Warung Dhea Jatiluwih</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-9.27062420959735, 115.1738827865749
+		<p class="card-text">Warung Dhea Jatiluwih. Sambil memandang persawahan, Anda tak hanya mendapatkan sajian beragam sajian lezat , tetapi juga bisa beristirahat untuk menghapus penat dari rutinitas. Kudapan lezat disajikan di Warung Dhea ini, mulai dari masakan khas Indonesia sampai jenis masakan western. Tak ketinggalan masakan khas Bali juga disguhkan di sini tentunya dengan harga yang</p>
+		<p>Rp. 30k - 100k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-primary">Booking Now !!!</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card" style="width: 23rem;">
+		<img src="images/restaurant3.jpg" class="card-img-top img-thumbnail" alt="skuter" width="100%" >
+		<div class="card-body">
+		<h5 class="card-title"> J Terrace Restaurant</h5>
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-fill.svg" width="30px" height="30px">
+		<img src="images/star-half.svg" width="30px" height="30px">
+		<img src="images/star.svg" width="30px" height="30px">
+		<br>
+		<img src="images/pin-map-fill.svg" width="30px" height="30px">-10.27062420959735, 115.1738827865749
+		<p class="card-text">Tak kalah dengan restoran lainnya, J Terrace juga menawarkan pemandangan terasering sawah yang memanjakan mata. Tentunya ini juga meningkatkan nafsu makan Anda dan merefleksikan pikiran. Bersantai bersama keluarga menjadi waktu yang berkualitas ketika Anda menghabiskan waktu di Jatiluwih.</p>
+		<p>Rp. 50k - 150k</p>
+		<a href="https://wa.wizard.id/54dae2" class="btn btn-success">Booking Now !!!</a>
+		</div>
+		</div>
+		</div>
+	</div>
+  </div>
+  </div>
+
+
+
+<!-- End Card -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#198754" fill-opacity="1" d="M0,224L15,218.7C30,213,60,203,90,186.7C120,171,150,149,180,133.3C210,117,240,107,270,133.3C300,160,330,224,360,250.7C390,277,420,267,450,240C480,213,510,171,540,176C570,181,600,235,630,261.3C660,288,690,288,720,288C750,288,780,288,810,277.3C840,267,870,245,900,245.3C930,245,960,267,990,277.3C1020,288,1050,288,1080,256C1110,224,1140,160,1170,160C1200,160,1230,224,1260,240C1290,256,1320,224,1350,218.7C1380,213,1410,235,1425,245.3L1440,256L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
+<footer class="text-white text-center" style="background-color:#198754;">
+<div class="container-fluid" style="background-color:#198754">
+<div class="row">
+<div class="col-md-4">
+@2021 Created By Web Design
+</div>
+<div class="col-md-4">
+<ul style="text-align:left;" class="list-unstyled">
+<li ><a href="#"></a> Home</li>
+<li ><a href="#objekwisata"></a> Objek Wisata</li>
+<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+<li ><a href="#wawasan"></a> Wawasan</li>
+</ul>
+</div>
+<div class="col-md-4">
+<p class="display-6">PT Desain Website</p>
+<p >Jatiluwih merupakan daya tarik wisata yang terkenal dengan teraseringnya</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

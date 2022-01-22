@@ -1,0 +1,158 @@
+{
+margin: 0;
+padding: 0;
+}
+/* navbar */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background: linear-gradient(90deg, rgba(41,134,47,1) 0%, rgba(110,203,99,1) 46%, rgba(110,203,99,1) 100%);
+height: 80px;
+width: 100%;
+}
+.navbar{
+min-width: 50px;
+background-color: rgba(213, 213, 213, 0.699);
+opacity: 30px;
+}
+*{
+margin: 0;
+padding: 0;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+height: 80px;
+width: 100%;
+}
+.navbar{
+min-width: 50px;
+background-color: rgba(213, 213, 213, 0.699);
+opacity: 30px;
+}
+.kotak1 {
+float: right;
+font-family: sans-serif;
+font-weight: 600;
+}
+li {
+float: left;
+padding: 10px;
+}
+li a {
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+margin-top: 10px;
+text-decoration: none;
+}
+.text{
+margin-left: 70px;
+}
+.navbar img{
+width: 100px;
+height: 80px;
+position: absolute;
+top:0px;
+bottom: 10px;
+}
+.float {
+float: right;
+}
+/* end navbar */
+/* jumbotron */
+.jumbotron{
+width: 100%;
+height: 400px;
+background-image: url('./image/background.jpg');
+background-size: cover;
+background-position-y: -300px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.jumbotron h1{
+font-size: 50px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: black 1px 1px 1px ;
+}
+/* end jumbotron */
+/* content */
+.content{
+display: flex;
+flex-wrap: wrap;
+margin-left: 100px;
+}
+.card {
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 26%;
+overflow: hidden;
+margin-top: 20px;
+margin-left: 20px;
+}
+.card h3{
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+.card p {
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+}
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img{
+width:350px !important;
+filter: contrast(25%);
+transition: 0.25s;
+}
+.card img:hover{
+filter: none;
+}
+.container {
+padding: 2px 16px;
+}
+.button{
+margin-top: 20px;
+padding-top: 6px;
+max-width: 200px;
+height: 26px;
+border: 1px solid black;
+border-radius: 10px;
+transition: 0.25s linear;
+}
+.button:hover{
+background-color: black;
+}
+.button a{
+margin-top: 70px !important;
+margin-left: 30px;
+text-decoration: none;
+color: black;
+}
+.button a:hover{
+color: white;
+}
+/* end content */
+/* footer */
+.footer{
+margin-top: 30px;
+text-align: center;
+padding-top: 20px;
+background-color: #CFDAC8;
+}
+.footer a{
+text-decoration: none;
+color: black;
+}
+/* end footer */
